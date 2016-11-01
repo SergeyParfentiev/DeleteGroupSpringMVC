@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - spring_mvc_demo@localhost" uuid="3fddd59d-075e-48f9-89f2-a856debc403c">
+    <database-info product="MySQL" version="5.7.11-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="spring_mvc_demo">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="bankdb"/>
+      <schema id="3" name="flatsdb"/>
+      <schema id="4" name="hibernate"/>
+      <schema id="5" name="information_schema"/>
+      <schema id="6" name="mydb"/>
+      <schema id="7" name="mydbtest"/>
+      <schema id="8" name="mysql"/>
+      <schema id="9" name="ordersdb"/>
+      <schema id="10" name="performance_schema"/>
+      <schema id="11" name="shopofitems"/>
+      <schema id="12" name="test"/>
+      <schema id="13" name="testautoincrement"/>
+      <schema id="14" name="testdb"/>
+      <schema id="15" name="testdb2"/>
+      <table id="16" parent="1" name="contacts"/>
+      <table id="17" parent="1" name="groups"/>
+      <column id="18" parent="16" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="19" parent="16" name="email">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="20" parent="16" name="name">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="21" parent="16" name="phone">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="22" parent="16" name="surname">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="23" parent="16" name="group_id">
+        <data-type>bigint(20)|0</data-type>
+      </column>
+      <index id="24" parent="16" name="FK_b8dptqwcfsdtr59ssp5w10a2m">
+        <columns>group_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="25" parent="16" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="26" parent="16" name="FK_b8dptqwcfsdtr59ssp5w10a2m">
+        <columns>group_id</columns>
+        <ref-key>~.groups.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="27" parent="17" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="28" parent="17" name="name">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="29" parent="17" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
